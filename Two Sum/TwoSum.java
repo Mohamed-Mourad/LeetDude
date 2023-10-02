@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         for (int j = 0; j < nums.length; j++) {
