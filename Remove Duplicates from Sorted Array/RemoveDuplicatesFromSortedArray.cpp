@@ -1,0 +1,20 @@
+#include <vector>;
+
+using namespace std;
+
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        
+        int k = 1;
+
+        for(int i=1; i<nums.size(); i++) {
+            if(nums[i] != nums[i-1]) {
+                nums.insert(nums.begin() + k, nums[i]);
+                i++;
+                k++;
+            }
+        }
+        return k;
+    }
+};
